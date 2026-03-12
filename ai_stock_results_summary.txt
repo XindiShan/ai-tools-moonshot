@@ -1,0 +1,20 @@
+AI-assisted stock prediction task
+
+Dataset rows: 506
+Date range: 2015-02-17 to 2017-02-16
+
+First-pass AI workflow (imperfect):
+- Target used: same-day up/down
+- Split used: random train/test split
+- Accuracy: 0.781
+- Confusion matrix:
+[[52 14]
+ [19 66]]
+
+Checked/corrected workflow:
+- Target used: next-day up/down
+- Split used: chronological split
+- Accuracy: 0.487
+- Confusion matrix:
+[[41 27]
+ [50 32]]
